@@ -1480,9 +1480,11 @@ label[for="menuBtn"] {
   position: absolute;
   overflow: hidden;
   color: #fff;
-  background: #c94b4b;
+  /* background: #c94b4b;
   background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
-  background: linear-gradient(to right, #4b134f, #c94b4b);
+  background: linear-gradient(to right, #4b134f, #c94b4b); */
+  /* TODO: Background */
+  background-color: black;
   z-index: 100;
   transform: translateX(110%);
   transition: transform 0.5s ease;
@@ -1520,7 +1522,7 @@ label[for="menuBtn"] {
 }
 
 .menu_overlay a:hover {
-  color: #c94b4b;
+  color: #8f8f8f;
 }
 
 #menuBtn {
