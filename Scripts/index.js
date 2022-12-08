@@ -64,10 +64,19 @@ document.addEventListener("scroll", (e) => {
 });
 // HamburgerEvents
 let menuBtn = document.querySelector("#menuBtn");
+let menuLinks = document.querySelectorAll(".menu_overlay ul li a");
+
 menuBtn.addEventListener("click", () => {
 	if (menuBtn.checked) {
 		document.querySelector("body").style.overflowY = "hidden";
 	} else {
 		document.querySelector("body").style.overflowY = "auto";
 	}
+});
+
+menuLinks.forEach((link) => {
+	link.addEventListener("click", () => {
+		menuBtn.checked = false;
+		document.querySelector("body").style.overflowY = "auto";
+	});
 });
