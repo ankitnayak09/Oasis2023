@@ -1492,14 +1492,14 @@ label[for="menuBtn"] {
 
 .menu_overlay .fas {
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 30px;
+  top: 60px;
   font-size: 2.5rem;
   transition: all 0.3s ease;
 }
 
 .menu_overlay .fas:hover {
-  color: #4b134f;
+  color: #8f8f8f;
   transform: scale(1.1) rotate(180deg);
 }
 
@@ -1508,21 +1508,25 @@ label[for="menuBtn"] {
   width: 100%;
   list-style: none;
   padding: 20px;
-  margin-left: 50px;
-  font-size: 4rem;
+  /* margin-left: 50px; */
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 2rem;
   align-items: center;
 }
 
 .menu_overlay a {
   color: #fff;
   text-decoration: none;
+  border: 2px solid transparent;
 }
 
 .menu_overlay a:hover {
-  color: #8f8f8f;
+  /* color: #8f8f8f; */
+  border: 2px solid #8f8f8f;
+  padding: 1rem 2rem;
 }
 
 #menuBtn {
@@ -1566,35 +1570,6 @@ label[for="menuBtn"] {
   padding: 10px;
   font-size: 16px;
   color: #4b134f;
-}
-
-.main_text {
-  color: #c94b4b;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 0 0 1px #111;
-  display: flex;
-  flex-direction: column;
-}
-
-.h2-r,
-.h2-l {
-  font-size: 6rem;
-}
-
-.h2-r {
-  transform: rotate(270deg);
-  margin-left: -100px;
-  z-index: 100;
-}
-
-.h2-l {
-  margin-left: 100px;
-  background-color: #4b134f;
-  padding: 20px;
-  z-index: 0;
 }
 
 @media screen and (max-width: 650px) {
