@@ -10,4 +10,5 @@ Portfolio Website of Student Organization Oasis
 ### Completed Column ✓
 
 -   [x] Adjust Position of Hamburger Menu
+-   [x] Change Order of Contact and Gallery in Side Menu
 -   [x] Completed task title
