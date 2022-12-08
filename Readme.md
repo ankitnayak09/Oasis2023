@@ -1,6 +1,6 @@
-# Project Name
+# Oasis Website
 
-Project Description
+Portfolio Website of Student Organization Oasis
 
 ### TODO
 
