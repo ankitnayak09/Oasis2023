@@ -5,9 +5,10 @@ Portfolio Website of Student Organization Oasis
 ### TODO
 
 -   [ ] Change Gallery Page imagesStyle
-    -   [ ] implement lightbox
-    -   [ ] Solve Issues in Gallery Page
--   [ ] implement Hamburger Menu in Gallery
+    -   [x] implement lightbox
+    -   [ ] changes photos in lightbox
+    -   [x] Solve Issues in Gallery Page
+-   [x] implement Hamburger Menu in Gallery
 
 ### Completed Column ✓
 

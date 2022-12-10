@@ -24,6 +24,7 @@ body {
   font-family: "Montserrat";
   color: white;
   position: relative;
+  overflow-x: hidden;
 }
 
 :root {
@@ -421,7 +422,7 @@ body {
   align-items: flex-start;
   position: absolute;
   right: 0;
-  top: 0;
+  top: 2rem;
 }
 
 @-webkit-keyframes ham-up-1 {
@@ -766,9 +767,9 @@ body {
   transition: 0.3s;
 }
 
-.gallery:hover .gallery__image {
+/* .gallery:hover .gallery__image {
   filter: grayscale(1);
-}
+} */
 
 /* 
 .gallery__column {
@@ -784,9 +785,9 @@ body {
   overflow: hidden;
 }
 
-.gallery__link:hover .gallery__image {
+/* .gallery__link:hover .gallery__image {
   filter: grayscale(0);
-}
+} */
 
 .gallery__link:hover .gallery__caption {
   opacity: 1;
@@ -832,3 +833,89 @@ body {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
   transition: 0.3s;
 }
+
+
+/* Latest Hamburger */
+
+
+label[for="menuBtn"] {
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: -2rem;
+}
+
+.menu_overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  color: #fff;
+  /* background: #c94b4b;
+  background: -webkit-linear-gradient(to right, #4b134f, #c94b4b);
+  background: linear-gradient(to right, #4b134f, #c94b4b); */
+  /* TODO: Background */
+  background-color: black;
+  z-index: 100;
+  transform: translateX(110%);
+  transition: transform 0.5s ease;
+}
+
+.menu_overlay .fas {
+  position: absolute;
+  right: 30px;
+  top: 60px;
+  font-size: 2.5rem;
+  transition: all 0.3s ease;
+}
+
+.menu_overlay .fas:hover {
+  color: #8f8f8f;
+  transform: scale(1.1) rotate(180deg);
+}
+
+.menu_overlay ul {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  padding: 20px;
+  /* margin-left: 50px; */
+  font-size: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.menu_overlay a {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+}
+
+.menu_overlay a:hover {
+  /* color: #8f8f8f; */
+  border: 2px solid #8f8f8f;
+  padding: 1rem 2rem;
+}
+
+#menuBtn {
+  display: none;
+}
+
+#menuBtn:checked~.menu_overlay {
+  transform: translateX(0);
+}
+
+
+.fas {
+  font-size: 2rem;
+  color: white;
+}
+
+.fas:hover {
+  color: #8f8f8f;
+}
+
+/* #latest Hamburger */

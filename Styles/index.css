@@ -1521,6 +1521,7 @@ label[for="menuBtn"] {
   color: #fff;
   text-decoration: none;
   border: 2px solid transparent;
+  font-family: "Montserrat";
 }
 
 .menu_overlay a:hover {
@@ -1537,6 +1538,8 @@ label[for="menuBtn"] {
   transform: translateX(0);
 }
 
+
+/* #latest Hamburger */
 .landing_page {
   max-height: 100vh;
   height: 100%;
