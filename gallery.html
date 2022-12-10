@@ -10,27 +10,21 @@
   <link href="https://fonts.googleapis.com" rel="preconnect" />
   <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet" />
-  <link href="../Styles/gallery.css" rel="stylesheet" />
-  <link href="../Styles/loader.css" rel="stylesheet" />
+  <link href="./Styles/gallery.css" rel="stylesheet" />
+  <!-- <link href="../Styles/loader.css" rel="stylesheet" /> -->
+  <!-- LightGallery -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css"
+    integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script defer src="../Scripts/gallery.js"></script>
-  <script defer src="../Scripts/hamburger.js"></script>
-  <script defer src="../Scripts/index.js"></script>
-  <script defer src="../Scripts/loader.js"></script>
-  <title>Gallery</title>
+  <!-- <script defer src="./Scripts/gallery.js"></script> -->
+  <script defer src="./Scripts/hamburger.js"></script>
+  <script defer src="./Scripts/index.js"></script>
+  <!-- <script defer src="./Scripts/loader.js"></script> -->
+  <title>Gallery | Past Events</title>
 </head>
 
 <body>
-  <!-- <div class="loader">
-    <div class="video-wrapper">
-      <video autoplay loop muted playsinline id="video" width="100%">
-        <source src="../Assets/loader.mp4" type="video/mp4" />
-      </video>
-      <div class="shadow"></div>
-    </div>
-
-    <div class="hide">CLICK TO CONTINUE</div>
-  </div> -->
 
   <div id="gal-close">
     <a href="../index.html"><img alt="" id="gal-close-img" src="../Assets/Back.svg" /></a>
@@ -82,7 +76,7 @@
     <h2 class="gal-head">GALLERY</h2>
   </div>
 
-  <div class="gallery">
+  <!-- <div class="gallery">
     <div class="galleryCont">
       <div class="opaque-divs">
         <div class="opaq-left"></div>
@@ -187,12 +181,74 @@
         </defs>
       </svg>
     </div>
+  </div> -->
+
+  <div class="gallery" id="lightgallery">
+    <!-- <div class="gallery__column"> -->
+    <a href="https://source.unsplash.com/_cvwXhGqG-o/300x300" class="gallery__link">
+      <img src="https://source.unsplash.com/_cvwXhGqG-o/300x300" alt="Portrait by Jessica Felicio"
+        class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/AHBvAIVqk64/300x500" class="gallery__link">
+      <img src="https://source.unsplash.com/AHBvAIVqk64/300x500" alt="Portrait by Oladimeji Odunsi"
+        class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/VLPLo-GtrIE/300x300" class="gallery__link">
+      <img src="https://source.unsplash.com/VLPLo-GtrIE/300x300" alt="Portrait by Alex Perez" class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/AR7aumwKr2s/300x300" class="gallery__link">
+      <img src="https://source.unsplash.com/AR7aumwKr2s/300x300" alt="Portrait by Noah Buscher" class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/dnL6ZIpht2s/300x300" class="gallery__link">
+      <img src="https://source.unsplash.com/dnL6ZIpht2s/300x300" alt="Portrait by Ivana Cajina" class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/tV_1sC603zA/300x500" class="gallery__link">
+      <img src="https://source.unsplash.com/tV_1sC603zA/300x500" alt="Portrait by Sam Burriss" class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/Xm9-vA_bhm0/300x500" class="gallery__link">
+      <img src="https://source.unsplash.com/Xm9-vA_bhm0/300x500" alt="Portrait by Mari Lezhava" class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/NTjSR3zYpsY/300x300" class="gallery__link">
+      <img src="https://source.unsplash.com/NTjSR3zYpsY/300x300" alt="Portrait by Ethan Haddox" class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/2JH8d3ChNec/300x300" class="gallery__link">
+      <img src="https://source.unsplash.com/2JH8d3ChNec/300x300" alt="Portrait by Amir Geshani" class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/FQhLLehm4dk/300x300" class="gallery__link">
+      <img src="https://source.unsplash.com/FQhLLehm4dk/300x300" alt="Portrait by Guilian Fremaux"
+        class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/OQd9zONSx7s/300x300" class="gallery__link">
+      <img src="https://source.unsplash.com/OQd9zONSx7s/300x300" alt="Portrait by Jasmin Chew" class="gallery__image">
+    </a>
+
+    <a href="https://source.unsplash.com/XZkEhowjx8k/300x500" class="gallery__link">
+      <img src="https://source.unsplash.com/XZkEhowjx8k/300x500" alt="Portrait by Dima DallAcqua"
+        class="gallery__image">
+    </a>
   </div>
 
   <div class="indic">
     <div class="disc active-disc" id="disc-1"></div>
     <div class="disc" id="disc-2"></div>
   </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"
+    integrity="sha512-pG+XpUdyBtp28FzjpaIaj72KYvZ87ZbmB3iytDK5+WFVyun8r5LJ2x1/Jy/KHdtzUXA0CUVhEnG+Isy1jVJAbA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    lightGallery(document.getElementById('lightgallery'));
+  </script>
 </body>
 
 </html>
