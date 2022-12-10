@@ -12,6 +12,7 @@ Portfolio Website of Student Organization Oasis
 
 ### Completed Column ✓
 
+-   [x] Changes gallery Images format from jpg to webp
 -   [x] Change Images of Events in Index Page
 -   [x] Adjust Position of Hamburger Menu
 -   [x] Change Gallery Page imagesStyle

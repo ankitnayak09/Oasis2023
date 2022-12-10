@@ -47,7 +47,7 @@ const initEvtElems = () => {
 			let evtElem = document.createElement("div");
 			evtElem.classList.add("evt");
 			evtElem.id = i.toString();
-			evtElem.style.backgroundImage = `url("Assets/gallery/${label}.jpg")`;
+			evtElem.style.backgroundImage = `url("Assets/gallery/${label}.webp")`;
 			let evtElemCont = document.createElement("div");
 			evtElemCont.classList.add("evt-item-cont");
 			i++;
